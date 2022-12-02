@@ -15,17 +15,17 @@
           <div class="img-second">
             <div class="circle1"><span></span></div><!--circle1-->
             <div class="circle2"><span></span></div><!--circle2-->
-            <div class="info-img">
+            <div name="res"class="info-img">
               <p>0000  0000  0000  0000</p>
             </div><!--info-img-->
-            <div class="name-img">
+            <div  name="res" class="name-img">
               <p>Jane Applessed</p>
-              <div class="date-img">
+              <div  name="res" class="date-img">
                 <p>00/00</p>
               </div><!--date-img-->
             </div><!--name-img-->
           </div><!--img-second-->
-          <div class="img-third">
+          <div name="res"  class="img-third">
             <div class="num-cv">
               <p>000</p>
             </div><!--num-cv-->
@@ -39,24 +39,23 @@
 
         <div class="name-information-one">
           <p>Cardholder name</p>
-          <input type="text" id="txtna" placeholder="e.g. Jane Appleseed">
+          <input type="text" id="txtna" placeholder="e.g. Jane Appleseed" onchange="Interation()">
         </div><!--name-information-one-->
 
         <div>
           <p>Card Number</p>
-          <input type="text" id="txtn" placeholder="e.g 1234 5678 9123 0000" >
+          <input type="text" id="txtn" placeholder="e.g 1234 5678 9123 0000" onchange="Interation()" >
         </div>
 
         <div class="date-information">
           <div class="month-year">
               <p>Exp.Date (mm/yy)</p>
-              <input type="text" name="txtm" placeholder="MM">
-              <input type="text" name="txty" placeholder=" YY">
+              <input type="text" name="txtm" placeholder="MM" onchange="Interation()">
+              <input type="text" name="txty" placeholder=" YY" onchange="Interation()">
           </div><!--month-->
-
           <div class="security-cvc">
             <p>cvc</p>
-            <input type="number" name="txtc" placeholder="e.g. 123">
+            <input type="text" name="txtc" placeholder="e.g. 123" onchange="Interation()">
           </div><!--security-cvc-->
         </div><!--date-information-->
         
@@ -65,6 +64,7 @@
         </div><!--button-->
       </div><!--name-information-->
     </div><!--informations-->
+    <script src="card.js"></script>
 </section>
 </body>
 </html>
