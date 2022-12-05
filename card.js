@@ -1,22 +1,46 @@
-function interation(){
-    let name = document.getElementsById('txtna')
-    let num = document.getElementsById('txtn')
-    let mon = document.getElementsByName('txtm')
-    let year = document.getElementsByName('txty')
-    let sec = document.getElementsByName('txtc')
-    let res = document.getElementsByName('res')
-    let valores = []
+// function interation(){
+// }
 
-    if(name.length == 0 && num.length == 0 && mon.length == 0 && year.length == 0 && sec.length == 0){
-        window.alert('Valores inválidos,por favor preencher os espaços em branco!')
-    }else{
-        valores.push(Number(num.value,mon.value,year.value,sec.value))
-        let n = Number(num.value)
-        let m = Number(mon.value)
-        let y = Number(year.value)
-        let s = Number(sec.value)
-        res.innerHTML = ''
-        
+// let inputName = document.querySelector('#txtna');
+// let areaname = document.querySelector('.name-img');
 
-    }
-}
+// inputName.onchange = handleChange;
+
+// function handleChange(e) {
+//     areaname.textContent = `${e.target.value}`;
+// }
+
+
+// const input = document.querySelector('#txtna')
+// const log = document.querySelector('.name-img')
+
+// input.addEventListener('input' , updateValue);
+
+// function updateValue(e){
+//     log.textContent = e.target.value
+// }
+
+
+
+// Interações com o nome e número do cartão.
+// const nameInput = document.querySelector('#txtna');
+
+// const nameArea = document.querySelector('.name-img');
+
+// nameInput.addEventListener('input', updateValueName);
+
+// function updateValueName(e) {
+//     nameArea.textContent = e.target.value;
+//   console.log('Opa')
+// }
+
+// const numberInput = document.querySelector('#txtn');
+
+// const numberArea = document.querySelector('.info-img');
+
+// numberInput.addEventListener('input', updateValueNumber);
+
+// function updateValueNumber(e) {
+//     numberArea.textContent = e.target.value;
+//     console.log('Opa')
+// }
