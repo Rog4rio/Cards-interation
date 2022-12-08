@@ -22,25 +22,56 @@
 
 
 
-// Interações com o nome e número do cartão.
-// const nameInput = document.querySelector('#txtna');
 
-// const nameArea = document.querySelector('.name-img');
+const nameInput = document.querySelector('#txtna');
 
-// nameInput.addEventListener('input', updateValueName);
+const nameArea = document.querySelector('.name-img');
 
-// function updateValueName(e) {
-//     nameArea.textContent = e.target.value;
-//   console.log('Opa')
-// }
+nameInput.addEventListener('input', updateValueName);
 
-// const numberInput = document.querySelector('#txtn');
+function updateValueName(e) {
+  nameArea.textContent = e.target.value;
+}
 
-// const numberArea = document.querySelector('.info-img');
+const numberInput = document.querySelector('#txtn');
 
-// numberInput.addEventListener('input', updateValueNumber);
+const numberArea = document.querySelector('.info-img');
 
-// function updateValueNumber(e) {
-//     numberArea.textContent = e.target.value;
-//     console.log('Opa')
-// }
+numberInput.addEventListener('input', updateValueNumber);
+
+function updateValueNumber(e) {
+    numberArea.textContent = e.target.value;
+}
+
+
+const monthInput = document.querySelector('#txtm')
+
+const monthArea = document.querySelector('.date-img')
+
+monthInput.addEventListener('input',updateValueMonth)
+
+function updateValueMonth(e){
+    monthArea.textContent = e.target.value;
+}
+
+
+const yearInput = document.querySelector('#txty')
+
+const yearArea = document.querySelector('.date-img2')
+
+yearInput.addEventListener('input',updateValueYear)
+
+function updateValueYear(e){
+    yearArea.textContent = e.target.value;
+}
+
+
+const securityInput = document.querySelector('#txtc')
+
+const securityArea = document.querySelector('.num-cv')
+
+securityInput.addEventListener('input',updateValueSecurity)
+
+function updateValueSecurity(e){
+    securityArea.textContent = e.target.value;
+}
