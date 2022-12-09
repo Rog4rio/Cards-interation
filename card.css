@@ -67,7 +67,8 @@ section{
 }
 
 .info-img{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     padding-top:20%;
     color:#fff;
     font-size:25px;  
@@ -82,12 +83,12 @@ section{
 
 .name-img{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     text-align: left;
-    padding: 5% 2rem 0 2rem;
+    padding: 5% 2rem 0 0;
     color:#fff;
     text-transform:uppercase;  
-    
+    width: 100%;
 }
 
 
@@ -97,21 +98,32 @@ section{
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding-right: 28%;
+    padding-right: 40%;
+}
+
+.name-card{
+    width:500px;
+    padding-left:35px;
 }
 
 
 .date-img{
-    background-color: blue;
-    width: 100px;
+    width: 32px;
     display: flex;
     align-items: center;
 }
 
+.date-img p{
+    font-size:16px;
+}
+
 .date-img2{
-    background-color: red;
     color:#fff;
-    width: 50px;
+    width: 35px;
+}
+
+.date-img2 p{
+    font-size:16px;
 }
 
 .date-img p{
@@ -138,7 +150,7 @@ section{
 .num-cv{
     padding-top: 25%;
     padding-left:80%;
-    color: #ccc;
+    color: gray;
 }
 
 .num-cv p {

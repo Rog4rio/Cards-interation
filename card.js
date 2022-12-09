@@ -25,7 +25,7 @@
 
 const nameInput = document.querySelector('#txtna');
 
-const nameArea = document.querySelector('.name-img');
+const nameArea = document.querySelector('.name-card');
 
 nameInput.addEventListener('input', updateValueName);
 
@@ -41,6 +41,7 @@ numberInput.addEventListener('input', updateValueNumber);
 
 function updateValueNumber(e) {
     numberArea.textContent = e.target.value;
+    numberArea.style.cssText = 'letter-spacing: 4px;' + 'color: white;' + 'font-size: 35px;' + 'font-weight: normal;'
 }
 
 
@@ -51,7 +52,7 @@ const monthArea = document.querySelector('.date-img')
 monthInput.addEventListener('input',updateValueMonth)
 
 function updateValueMonth(e){
-    monthArea.textContent = e.target.value;
+    monthArea.textContent = e.target.value + '/';
 }
 
 
