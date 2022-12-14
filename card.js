@@ -84,11 +84,13 @@ function finish(){
     }else{
         const res = document.getElementById('res')
         const img = document.createElement('img')
+        const item = document.querySelector('.informations')
         img.setAttribute('id', 'foto')
         if(nameInput.value.length > 0 && numberInput.value.length > 0 && monthInput.value.length > 0 && yearInput.value.length > 0 && securityInput.value.length > 0){
             img.setAttribute('src','icon-complete.svg')
         }
-        res.innerHTML = 'Thank You</br>'
+        res.innerHTML = `Thank you</br>We've added your card details`
         res.appendChild(img)
+        item.style.cssText = 'display:none;'
     }
 }
