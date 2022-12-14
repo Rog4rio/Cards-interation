@@ -234,12 +234,15 @@ section{
     margin-top: 30px;
 }
 
+
+
 .button input[type=submit]{
     width:300px;
     padding:10px;
     color:white;
     border-radius:8px;
     background-color: rgb(70, 34, 85);
+    cursor: pointer;
 }
 
 
