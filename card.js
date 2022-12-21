@@ -83,14 +83,22 @@ function finish(){
         window.alert('Impossível cadastrar o cartão!')
     }else{
         const res = document.getElementById('res')
+        const inp = document.querySelector('.inp > input')
         const img = document.createElement('img')
+        const paragrafo = document.createElement('p')
         const item = document.querySelector('.informations')
         img.setAttribute('id', 'foto')
         if(nameInput.value.length > 0 && numberInput.value.length > 0 && monthInput.value.length > 0 && yearInput.value.length > 0 && securityInput.value.length > 0){
-            img.setAttribute('src','icon-complete.svg')
+             img.setAttribute('src','icon-complete.svg')
         }
-        res.innerHTML = `Thank you</br>We've added your card details`
         res.appendChild(img)
+        img.style.cssText = 'padding-bottom:25px;'
+        res.innerHTML += `<h1>Thank you!</h1>`
+        res.appendChild(paragrafo)
+        paragrafo.innerHTML += `We've added your card details`
+        paragrafo.style.cssText = 'color:gray;'
+        res.style.cssText = 'display:flex;'
+        inp.style.cssText = 'display:block;position:absolute;top:62%;'
         item.style.cssText = 'display:none;'
     }
 }
